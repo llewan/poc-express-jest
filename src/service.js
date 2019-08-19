@@ -15,12 +15,12 @@ const Service = {
 
   get(postId) {
     return axios.get(`${this.basePath}/${postId}`)
-    .then((response) => {
-      return response.data;
-    })
-    .catch((error) => {
-      return error;
-    });
+      .then((response) => {
+        return response.data;
+      })
+      .catch((error) => {
+        return error;
+      });
   },
 };
 

@@ -4,7 +4,7 @@ const Controller = {
   getPosts(req, res, next) {
     return Service.list()
       .then((posts) => {
-        return res.json(posts);
+        return res.status(201).json(posts);
       })
       .catch((error) => {
         return next(error);

@@ -1,15 +1,12 @@
 const Controller = require('./controller');
-jest.mock('./controller');
 
 const getSpy = jest.fn();
-const postSpy = jest.fn();
 
 jest.doMock('express', () => {
   return {
     Router() {
       return {
         get: getSpy,
-        post: postSpy
       }
     }
   }
