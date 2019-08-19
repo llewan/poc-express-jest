@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "author": "Leonardo Lewandowski <leolewan@gmail.com>",
   "license": "MIT",
