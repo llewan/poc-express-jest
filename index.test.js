@@ -1,5 +1,4 @@
 const router = require('./src/router');
-jest.mock('./src/router');
 
 const useSpy = jest.fn();
 const listenSpy = jest.fn();
